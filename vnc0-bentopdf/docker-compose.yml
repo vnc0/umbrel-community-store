@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: vnc0-bentopdf_web_1
+      APP_PORT: 8080
+
+  web:
+    image: ghcr.io/alam00000/bentopdf-simple:2.5.0@sha256:ea5e0b7f38bd81be9fcbba96c168c736221b20675958c0084d411dc39fa2682e
+    restart: on-failure
