@@ -21,10 +21,10 @@ website: https://bentopdf.com/
 repo: https://github.com/alam00000/bentopdf
 support: https://github.com/alam00000/bentopdf/issues
 gallery:
-  - 1.jpg
-  - 2.jpg
-  - 3.jpg
-  - 4.jpg
+  - https://github.com/getumbrel/umbrel-apps-gallery/blob/master/bentopdf/1.jpg?raw=true
+  - https://github.com/getumbrel/umbrel-apps-gallery/blob/master/bentopdf/2.jpg?raw=true
+  - https://github.com/getumbrel/umbrel-apps-gallery/blob/master/bentopdf/3.jpg?raw=true
+  - https://github.com/getumbrel/umbrel-apps-gallery/blob/master/bentopdf/4.jpg?raw=true
 releaseNotes: >-
   This update brings a major rewrite of the Compare PDFs tool, turning it into a full semantic comparison engine, along with a rotation fix and new language support.
 
@@ -50,3 +50,4 @@ dependencies: []
 path: ""
 defaultUsername: ""
 defaultPassword: ""
+icon: https://raw.githubusercontent.com/getumbrel/umbrel-apps-gallery/refs/heads/master/bentopdf/icon.svg
