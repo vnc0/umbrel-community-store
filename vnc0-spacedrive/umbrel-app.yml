@@ -34,13 +34,12 @@ developer: Spacedriveapp
 website: https://spacedrive.com
 repo: https://github.com/spacedriveapp/spacedrive
 support: https://github.com/spacedriveapp/spacedrive/issues
-gallery: [
+gallery:
   - https://github.com/spacedriveapp/spacedrive/blob/main/docs/public/SDMediaView.webp?raw=true
   - https://github.com/spacedriveapp/spacedrive/blob/main/docs/public/SDGridView.webp?raw=true
   - https://github.com/spacedriveapp/spacedrive/blob/main/docs/public/SDColumnView.webp?raw=true
   - https://github.com/spacedriveapp/spacedrive/blob/main/docs/public/SDSplatView.webp?raw=true
   - https://github.com/spacedriveapp/spacedrive/blob/main/docs/public/SDVideoPlayer.webp?raw=true
-]
 dependencies: []
 path: ""
 defaultUsername: ""

@@ -53,9 +53,8 @@ developer: Spacedriveapp
 website: https://spacebot.sh
 repo: https://github.com/spacedriveapp/spacebot
 support: https://github.com/spacedriveapp/spacebot/issues
-gallery: [
+gallery:
   - https://github.com/spacedriveapp/spacebot/raw/main/.github/spacebot-ui.jpg
-]
 dependencies: []
 path: ""
 defaultUsername: ""
