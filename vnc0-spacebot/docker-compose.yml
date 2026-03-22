@@ -8,6 +8,7 @@ services:
 
   web:
     image: ghcr.io/spacedriveapp/spacebot:v0.3.3@sha256:75a199cecc507190717655269236264c3808da97eb6e36730d589e8060964068
+    user: "1000:1000"
     restart: on-failure
     stop_grace_period: 1m
     environment:
