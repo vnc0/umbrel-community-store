@@ -1,0 +1,16 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: vnc0-spacebot_web_1
+      APP_PORT: 19898
+
+  web:
+    image: ghcr.io/spacedriveapp/spacebot:v0.3.3@sha256:75a199cecc507190717655269236264c3808da97eb6e36730d589e8060964068
+    restart: on-failure
+    stop_grace_period: 1m
+    environment:
+      - SD_AUTH=disabled
+    volumes:
+      - ${APP_DATA_DIR}/data:/data

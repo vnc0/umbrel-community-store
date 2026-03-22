@@ -1,0 +1,65 @@
+manifestVersion: 1
+id: vnc0-spacebot
+name: Spacebot
+tagline: AI agent for teams, communities, and multi-user environments
+category: productivity
+version: "0.3.3"
+port: 19898
+description: >-
+  Spacebot is an AI agent built for teams and communities. Unlike traditional AI agents that run in a single session, Spacebot splits work into specialized processes — channels talk to users, branches think deeply, and workers execute tasks — all running concurrently.
+
+
+  Connect your team via Discord, Slack, Telegram, Twitch, or use the built-in web chat UI accessible at the app URL. Multiple people can interact simultaneously without blocking each other.
+
+
+  Memory system:
+
+  - Eight typed memory kinds: Fact, Preference, Decision, Identity, Event, Observation, Goal, Todo
+
+  - Graph-connected knowledge with hybrid vector + full-text search
+
+  - Cortex synthesizes a memory bulletin injected into every conversation
+
+
+  Task execution:
+
+  - Shell, file, exec, and headless browser (Chromium) tools
+
+  - Web search via Brave Search API
+
+  - Spawn OpenCode for deep coding sessions with LSP awareness
+
+
+  Scheduling:
+
+  - Cron jobs with natural language scheduling ("check my inbox every 30 minutes")
+
+  - Active hours support with midnight wrapping
+
+  - Circuit breaker auto-disables jobs after 3 consecutive failures
+
+
+  Smart model routing:
+
+  - Supports Anthropic, OpenAI, OpenRouter, Ollama, and any OpenAI-compatible provider
+
+  - Automatic fallback chains when models hit rate limits
+
+  - Prompt complexity scoring routes simple requests to cheaper models automatically
+
+
+  Configuration: Set your LLM API key via environment variables (e.g. ANTHROPIC_API_KEY). Mount a config.toml into the data volume for full control. On first launch a default agent is created automatically.
+developer: Spacedriveapp
+website: https://spacebot.sh
+repo: https://github.com/spacedriveapp/spacebot
+support: https://github.com/spacedriveapp/spacebot/issues
+gallery: [
+  - https://github.com/spacedriveapp/spacebot/raw/main/.github/spacebot-ui.jpg
+]
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+releaseNotes: >-
+  Full release notes can be found at https://github.com/spacedriveapp/spacebot/releases
+icon: https://raw.githubusercontent.com/spacedriveapp/spacebot/main/docs/app/icon.png
