@@ -1,0 +1,50 @@
+manifestVersion: 1
+id: vnc0-spacedrive
+name: Spacedrive
+tagline: Open source cross-platform file manager powered by a virtual distributed filesystem
+category: files
+version: "0.4.2"
+port: 19897
+description: >-
+  Spacedrive is an open source cross-platform file manager powered by a virtual distributed filesystem (VDFS) written in Rust. Organize files across multiple devices, clouds, and platforms from a single interface.
+
+
+  Key features:
+
+  - Virtual distributed filesystem — index and browse files across local drives, network shares, and cloud storage from one unified interface
+
+  - Tag once, access everywhere — apply tags across all your storage locations and find anything instantly
+
+  - Privacy-first — your data stays on your hardware; no cloud uploads required
+
+  - Local AI — run file analysis and semantic search using local models, no data leaves your network
+
+  - Media support — video thumbnail generation, audio transcription, HEIF/HEIC image support (FFmpeg and libheif built in)
+
+  - Full-text and semantic search across your entire library
+
+
+  Self-hosting:
+
+  The server exposes a web UI on port 8080. Set the SD_AUTH environment variable to configure authentication (format: username:password). The default credentials are admin / admin — change these after first login by editing the SD_AUTH value in your docker-compose configuration.
+
+
+  Data is persisted in the /data volume. Mount additional storage paths as read-only volumes to index external drives and network shares.
+developer: Spacedriveapp
+website: https://spacedrive.com
+repo: https://github.com/spacedriveapp/spacedrive
+support: https://github.com/spacedriveapp/spacedrive/issues
+gallery: [
+  - https://github.com/spacedriveapp/spacedrive/blob/main/docs/public/SDMediaView.webp?raw=true
+  - https://github.com/spacedriveapp/spacedrive/blob/main/docs/public/SDGridView.webp?raw=true
+  - https://github.com/spacedriveapp/spacedrive/blob/main/docs/public/SDColumnView.webp?raw=true
+  - https://github.com/spacedriveapp/spacedrive/blob/main/docs/public/SDSplatView.webp?raw=true
+  - https://github.com/spacedriveapp/spacedrive/blob/main/docs/public/SDVideoPlayer.webp?raw=true
+]
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+releaseNotes: >-
+  Full release notes can be found at https://github.com/spacedriveapp/spacedrive/releases
+icon: https://raw.githubusercontent.com/spacedriveapp/spacedrive/main/apps/mobile/ios/Spacedrive/Images.xcassets/AppIcon.appiconset/App-Icon-1024x1024@1x.png

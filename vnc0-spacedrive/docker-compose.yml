@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: vnc0-spacedrive_web_1
+      APP_PORT: 19897
+
+  web:
+    image: ghcr.io/spacedriveapp/spacedrive/server:0.4.2@sha256:fd3bc896f3a5b8e429e008cedde361d6b9468c48d8c81996fdb1d99e90e0837b
+    user: "1000:1000"
+    restart: on-failure
+    stop_grace_period: 1m
+    environment:
+      - SD_AUTH=disabled
+      - DATA_DIR=/data
+    volumes:
+      - ${APP_DATA_DIR}/data:/data
+      - ${UMBREL_ROOT}/data/storage:/umbrel
