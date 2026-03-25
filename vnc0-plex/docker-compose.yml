@@ -28,4 +28,6 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data/config:/config
       - ${APP_DATA_DIR}/data/transcode:/transcode
-      - ${UMBREL_ROOT}/data/storage/downloads:/downloads
+      - ${UMBREL_ROOT}/data/storage/Music:/music
+      - ${UMBREL_ROOT}/data/storage/Movies:/movies
+      - ${UMBREL_ROOT}/data/storage/TV:/tv
